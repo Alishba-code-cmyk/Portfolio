@@ -4,54 +4,48 @@
  */
 
 export const profile = {
-  name: "Pratham Sharda",
-  firstName: "Pratham",
-  lastName: "Sharda",
-  initials: "PS",
+  name: "Alishba",
+  firstName: "Alishba",
+  initials: "A",
   // Rotating words shown under the name in the hero.
   roles: [
-    "Junior Program Manager",
-    "AI & Automation Builder",
-    "Data Analyst",
-    "Full-Stack Problem Solver",
-  ],
-  headline: "I build AI-powered internal tools & data systems.",
+    "Full-Stack web developer"
+    ],
+  headline: "Building ideas into real-world applications.",
   subheadline:
-    "Junior Program Manager at Fitelo — turning messy operations into clean, automated products. I ship CRMs, AI panels and analytics that teams actually use.",
+    "I'm an MCA student and developer focused on full-stack web development, Java, and creating useful digital experiences through clean, practical code.",
   location: "India",
-  currentCompany: "Fitelo",
-  currentRole: "Junior Program Manager",
-  photo: "/pratham-photo.jpg",
-  resume: "/Pratham-Sharda-Resume.pdf",
+  currentCompany: "",
+  currentRole: "",
+  photo: "/alishba.jpg",
+  resume: "/updated resume.pdf",
 } as const;
 
 export const contact = {
-  email: "prathamsharda986@gmail.com",
-  phone: "+91 98163 74871",
-  phoneHref: "+919816374871",
-  linkedin: "https://www.linkedin.com/in/pratham-sharda-21040234a",
-  github: "https://github.com/Prathamsharda121",
+  email: "itsalishba00@gmail.com",
+  phone: "+91 8303392903",
+  phoneHref: "+91 8303392903",
+  linkedin: "https://www.linkedin.com/in/alishba-ainul-435348365/",
+  github: "https://github.com/Alishba-code-cmyk",
 } as const;
 
 export const stats = [
-  { value: "9.08", suffix: "/10", label: "MCA CGPA" },
-  { value: "6", suffix: "+", label: "Products shipped" },
+  { value: "", suffix: "/10", label: "MCA CGPA" },
+  { value: "4", suffix: "+", label: "Full stack Projects" },
   { value: "10", suffix: "+", label: "Tools & platforms" },
   { value: "3", suffix: "", label: "Certifications" },
 ] as const;
 
 export const about = {
   paragraphs: [
-    "I'm an MCA graduate and a builder at heart. At Fitelo I work as a Junior Program Manager, where my job is equal parts product, data and engineering — I find where operations break and I ship tools that fix them.",
-    "I've built a Quality-team CRM that turns client emails and WhatsApp queries into structured tickets, AI panels powered by Claude and strong prompt engineering, and analytics stacks that give teams real numbers to act on. I move comfortably from a Supabase schema to a Metabase dashboard to a Gupshup WhatsApp template.",
-    "I'm obsessed with clean systems, thoughtful automation and using AI the right way. If it can be measured, automated or made 10x simpler, that's the problem I want.",
+    "Hi, I'm Alishba. I am an MCA student and aspiring software developer passionate about building practical, user-focused applications. With a background in web development, Java, and full-stack technologies, I enjoy turning ideas into functional digital experiences.My experience as an Assistant Manager has strengthened my skills in teamwork, coordination, and problem-solving—qualities I bring to every development project.I'm continuously improving my technical skills, exploring new technologies, and building projects that solve real-world problems.",
   ],
   focus: [
-    "AI product & automation",
-    "Data analytics & dashboards",
-    "Internal tools & CRMs",
-    "Program & delivery management",
-  ],
+  "Full-Stack Web Development",
+  "AI-Powered Applications",
+  "Backend Engineering & REST APIs",
+  "Data Structures & Problem Solving",
+],
 } as const;
 
 export type SkillGroup = {
@@ -68,7 +62,6 @@ export const skillGroups: SkillGroup[] = [
       "Claude",
       "Prompt Engineering",
       "LangChain",
-      "RAG Systems",
       "GenAI Tools",
       "Machine Learning",
       "AI Agents & Panels",
@@ -82,67 +75,51 @@ export const skillGroups: SkillGroup[] = [
       "SQL",
       "Advanced Excel",
       "Google Sheets",
-      "App Script",
       "Power BI",
-      "Looker Studio",
-      "Metabase",
     ],
   },
   {
-    title: "Web & Backend",
+    title: "Languages & Frontend",
     accent: "blue",
-    skills: ["Next.js", "React", "Flask", "TypeScript", "HTML", "CSS", "REST APIs"],
+    skills: [
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+    ],
   },
   {
-    title: "Infra & Platforms",
+    title: "Backend & Databases",
     accent: "cyan",
-    skills: ["Vercel", "Neon", "Supabase", "AWS", "GitLab", "Prod DB & Servers"],
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "MongoDB",
+      "MySQL",
+      "Authentication",
+      "Database Design",
+    ],
   },
   {
-    title: "Growth & Ops Tooling",
+    title: "Tools & Engineering",
     accent: "violet",
-    skills: ["MoEngage", "Gupshup (WhatsApp)", "Admin Panels", "CRM Systems", "Analytics"],
-  },
-];
-
-export type Experience = {
-  company: string;
-  role: string;
-  period: string;
-  current?: boolean;
-  summary: string;
-  highlights: string[];
-  stack: string[];
-};
-
-export const experiences: Experience[] = [
-  {
-    company: "Fitelo",
-    role: "Junior Program Manager",
-    period: "Present",
-    current: true,
-    summary:
-      "Own the build of internal products, AI panels and analytics that power day-to-day operations across teams.",
-    highlights: [
-      "Designed and shipped a Quality-team CRM that converts client emails and WhatsApp queries into structured tickets, routed to Relationship Managers for resolution.",
-      "Built AI panels and internal tools powered by Claude and careful prompt engineering to automate repetitive workflows.",
-      "Ran production stacks across Vercel, Neon, Supabase, AWS and GitLab — from database to deployment.",
-      "Integrated MoEngage, Gupshup WhatsApp templates and Metabase to close the loop between messaging, data and action.",
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Postman",
+      "Vercel",
+      "Render",
+      "DSA",
+      "OOP",
     ],
-    stack: ["Next.js", "Supabase", "Neon", "Claude", "AWS", "Gupshup", "Metabase", "MoEngage"],
   },
-  {
-    company: "Nureca Limited",
-    role: "Data Analyst",
-    period: "Previous",
-    summary:
-      "Automated reporting and internal workflows using Google App Script, Sheets and advanced Excel.",
-    highlights: [
-      "Developed App Script automations and trackers that streamlined recurring team workflows.",
-      "Worked across Google Sheets and advanced Excel to model and clean operational data.",
-    ],
-    stack: ["App Script", "Google Sheets", "Advanced Excel", "Data Analysis"],
-  },
+
 ];
 
 export type Project = {
@@ -155,56 +132,63 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    title: "Quality CRM & Ticketing System",
-    tagline: "Email + WhatsApp → tickets → resolution",
+  {title: "Wanderlust — Rental Listing Platform",
+    tagline: "Discover, create, and manage property listings",
     description:
-      "A CRM for the Quality team where clients raise queries over email and WhatsApp. Each query is captured, de-duplicated and turned into a trackable ticket that Relationship Managers pick up and resolve — with full status history and analytics.",
-    tags: ["Next.js", "Supabase", "Gupshup", "Vercel", "AWS"],
-    category: "Product",
+      "A full-stack rental listing application where users can explore properties, create listings, authenticate accounts, and post reviews. Includes listing management, image uploads, and location-based map integration.",
+    tags: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Passport.js",
+      "Cloudinary",
+      "Leaflet",
+    ],
+    category: "Full Stack",
     featured: true,
   },
   {
-    title: "AI Panels & Internal Tools",
-    tagline: "Claude-powered automation panels",
+    title: "HealthWise AI",
+    tagline: "AI-assisted health information and discovery",
     description:
-      "A suite of admin panels with built-in AI features — powered by Claude and strong prompt engineering — that automate content, triage and repetitive decisions across internal teams.",
-    tags: ["Claude", "Prompt Engineering", "Next.js", "Neon"],
+      "A health-focused web application exploring AI-assisted health information and nearby hospital discovery using postal codes. Designed with a clear disclaimer to encourage responsible use of AI-generated health information.",
+    tags: ["Next.js", "React", "AI Integration", "APIs"],
     category: "AI",
     featured: true,
   },
   {
-    title: "Analytics & Dashboards Stack",
-    tagline: "Metabase · Power BI · MoEngage",
+     title: "Converza — Real-Time Meeting Platform",
+    tagline: "Seamless video meetings and real-time communication",
     description:
-      "End-to-end analytics: production data surfaced through Metabase and Power BI dashboards, with MoEngage campaign tracking — giving teams live, decision-ready numbers.",
-    tags: ["Metabase", "Power BI", "MoEngage", "SQL"],
-    category: "Data",
+      "A full-stack video conferencing platform designed to support meeting rooms and real-time communication. Built to explore real-time event handling, meeting workflows, and scalable application architecture.",
+    tags: ["React","webRTC", "Node.js", "Express", "Socket.IO", "MongoDB"],
+    category: "Full Stack",
+    featured: true,
+   
+  },
+  {
+     title: "Zerodha — Trading Dashboard",
+    tagline: "Market insights through a clean trading interface",
+    description:
+      "A trading-dashboard project inspired by modern investment platforms, focused on presenting market information, portfolio holdings, and performance data through an intuitive interface.",
+    tags: ["React", "JavaScript", "Charts", "REST APIs"],
+    category: "Frontend",
     featured: true,
   },
   {
-    title: "RAG Chatbot",
-    tagline: "Document-grounded Q&A with LangChain",
+    title: "Personal Developer Portfolio",
+    tagline: "A central hub for my work and technical journey",
     description:
-      "An AI chatbot built with LangChain that retrieves relevant context from documents and answers user questions accurately, grounded in source material.",
-    tags: ["LangChain", "Python", "RAG", "GenAI"],
-    category: "AI",
-  },
-  {
-    title: "Stocks Power BI Dashboard",
-    tagline: "Live-updating market dashboard",
-    description:
-      "Transformed raw Excel stock data into a live, auto-refreshing Power BI dashboard with interactive visuals for tracking performance over time.",
-    tags: ["Power BI", "Excel", "Data Modeling"],
-    category: "Data",
-  },
-  {
-    title: "House Price Prediction",
-    tagline: "Random Forest regression model",
-    description:
-      "A predictive ML model using Random Forest to estimate housing prices from key property attributes, with feature engineering and evaluation.",
-    tags: ["Python", "Machine Learning", "Random Forest"],
-    category: "AI",
+      "A responsive portfolio showcasing my technical skills, projects, education, and professional experience, with a focus on clean design, accessible navigation, and a polished user experience.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+    category: "Frontend",
+    featured: true,
   },
 ];
 
@@ -220,18 +204,52 @@ export const education: EducationItem[] = [
   {
     degree: "M.C.A.",
     field: "Master of Computer Applications",
-    institute: "CGC — Landran",
-    period: "2024 — 2026",
-    score: "CGPA 9.08",
+    institute: "Lovely Professional University",
+    period: "2026 — 2028",
+    score: "CGPA ",
   },
   {
     degree: "B.C.A.",
     field: "Bachelor of Computer Applications",
-    institute: "Maharaja Agrasen University",
-    period: "2021 — 2024",
-    score: "CGPA 6.84",
+    institute: "Mahatma gandhi kashi vidyapith",
+    period: "2022 — 2025",
+    score: "CGPA 7",
   },
 ];
+export type Experience = {
+  company: string;
+  role: string;
+  period: string;
+  current?: boolean;
+  summary: string;
+  highlights: string[];
+  stack: string[];
+};
+
+export const experiences: Experience[] = [
+ {
+  company: "Saaz Electronic Jacquards",
+  role: "Junior Executive Manager",
+  period: "2025-2026",
+  current: false,
+  summary:
+    "Supported day-to-day business operations, team coordination, and workflow management while developing practical leadership and problem-solving skills.",
+  highlights: [
+    "Coordinated daily operations and helped ensure tasks were completed efficiently.",
+    "Worked with team members to manage responsibilities and resolve operational issues.",
+    "Supported planning, task allocation, and communication across day-to-day activities.",
+    "Developed organizational, decision-making, and teamwork skills while balancing professional responsibilities.",
+  ],
+  stack: [
+    "Team Coordination",
+    "Operations Management",
+    "Communication",
+    "Problem Solving",
+    "Task Management",
+  ],
+}
+];
+
 
 export type Certification = {
   title: string;
@@ -240,9 +258,8 @@ export type Certification = {
 };
 
 export const certifications: Certification[] = [
-  { title: "Python Essentials", issuer: "CISCO", date: "Apr 2025" },
-  { title: "Data Analysis & Power BI", issuer: "Office Masters", date: "Mar 2025" },
-  { title: "AI Developer Internship — GenAI Tools", issuer: "GenAI Program", date: "Jul 2025" },
+  { title: "web developement", issuer: "Apna college", date: "nov 2025" },
+  { title: "Data structure in java", issuer: "Apna college", date: "Mar 2026" },
 ];
 
 export const navLinks = [

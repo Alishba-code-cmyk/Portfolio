@@ -24,14 +24,14 @@ const channels = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "in/pratham-sharda",
+    value: "in/alishba-ainul",
     href: contact.linkedin,
     external: true,
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "Prathamsharda121",
+    value: "Alishba-code-cmyk",
     href: contact.github,
     external: true,
   },
