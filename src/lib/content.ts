@@ -9,7 +9,8 @@ export const profile = {
   initials: "A",
   // Rotating words shown under the name in the hero.
   roles: [
-    "Full-Stack web developer"
+    "Full-Stack web developer",
+    ""
     ],
   headline: "Building ideas into real-world applications.",
   subheadline:
@@ -265,8 +266,8 @@ export const certifications: Certification[] = [
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Work", href: "#work" },
+    { label: "Work", href: "#work" },
   { label: "Education", href: "#education" },
+  { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ] as const;
