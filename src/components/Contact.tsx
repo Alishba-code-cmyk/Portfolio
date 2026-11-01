@@ -69,7 +69,7 @@ export function Contact() {
                 </h2>
                 <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted text-balance">
                   Got an idea for a web application, a software project,
-or an opportunity to collaborate? I'd love to connect
+or an opportunity to collaborate? I&apos;d love to connect
 and discuss how we can build something meaningful.
                 
                 </p>
