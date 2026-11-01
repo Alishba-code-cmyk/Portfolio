@@ -155,7 +155,7 @@ export function Hero() {
                   alt={profile.name}
                   fill
                   priority
-                  sizes="(max-width: 1024px) 380px, 440px"
+                  sizes="(max-width: 1024px) 300px, 350px"
                   className="object-cover object-[center_20%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-70" />

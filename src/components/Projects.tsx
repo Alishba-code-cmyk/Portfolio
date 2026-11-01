@@ -14,9 +14,10 @@ import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const categoryColor: Record<string, string> = {
-  Product: "text-cyan bg-cyan/10 border-cyan/20",
+  "Full Stack": "text-cyan bg-cyan/10 border-cyan/20",
+  Frontend: "text-blue bg-blue/10 border-blue/20",
   AI: "text-violet-soft bg-violet/10 border-violet/20",
-  Data: "text-blue bg-blue/10 border-blue/20",
+  Backend: "text-cyan bg-cyan/10 border-cyan/20",
 };
 
 function ProjectCard({ project, big }: { project: Project; big?: boolean }) {

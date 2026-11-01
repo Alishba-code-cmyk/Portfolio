@@ -10,7 +10,8 @@ export const profile = {
   // Rotating words shown under the name in the hero.
   roles: [
     "Full-Stack web developer",
-    ""
+    "Software Developer",
+    "Problem Solver",
     ],
   headline: "Building ideas into real-world applications.",
   subheadline:
@@ -34,7 +35,7 @@ export const stats = [
   { value: "", suffix: "/10", label: "MCA CGPA" },
   { value: "4", suffix: "+", label: "Full stack Projects" },
   { value: "10", suffix: "+", label: "Tools & platforms" },
-  { value: "3", suffix: "", label: "Certifications" },
+  { value: "2", suffix: "", label: "Certifications" },
 ] as const;
 
 export const about = {
@@ -56,27 +57,16 @@ export type SkillGroup = {
 };
 
 export const skillGroups: SkillGroup[] = [
-  {
-    title: "AI & LLM",
-    accent: "violet",
+ {
+    title: "Programming Languages",
+    accent: "blue",
     skills: [
-      "Claude",
-      "Prompt Engineering",
-      "LangChain",
-      "GenAI Tools",
-      "Machine Learning",
-      "AI Agents & Panels",
-    ],
-  },
-  {
-    title: "Data & Analytics",
-    accent: "cyan",
-    skills: [
+      "Java",
+      "JavaScript",
+      "TypeScript",
       "Python",
-      "SQL",
-      "Advanced Excel",
-      "Google Sheets",
-      "Power BI",
+      "C",
+      "C++",
     ],
   },
   {
@@ -217,14 +207,14 @@ export const education: EducationItem[] = [
     field: "Master of Computer Applications",
     institute: "Lovely Professional University",
     period: "2026 — 2028",
-    score: "CGPA ",
+    score: "Currently Pursuing",
   },
   {
     degree: "B.C.A.",
     field: "Bachelor of Computer Applications",
     institute: "Mahatma gandhi kashi vidyapith",
     period: "2022 — 2025",
-    score: "CGPA 7",
+    score: "CGPA 7.0",
   },
 ];
 export type Experience = {
@@ -240,7 +230,7 @@ export type Experience = {
 export const experiences: Experience[] = [
  {
   company: "Saaz Electronic Jacquards",
-  role: "Junior Executive Manager",
+  role: "Assistant Manager",
   period: "2025-2026",
   current: false,
   summary:
