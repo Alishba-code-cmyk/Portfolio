@@ -38,17 +38,26 @@ export const stats = [
   { value: "2", suffix: "", label: "Certifications" },
 ] as const;
 
+
 export const about = {
   paragraphs: [
-    "Hi, I'm Alishba. I am an MCA student and aspiring software developer passionate about building practical, user-focused applications. With a background in web development, Java, and full-stack technologies, I enjoy turning ideas into functional digital experiences.My experience as an Assistant Manager has strengthened my skills in teamwork, coordination, and problem-solving—qualities I bring to every development project.I'm continuously improving my technical skills, exploring new technologies, and building projects that solve real-world problems.",
+    "I'm Alishba, an MCA student and aspiring software developer with a strong interest in building practical and user-focused applications.",
+
+    "My development journey revolves around full-stack web development, Java, and backend engineering. I enjoy working across the technology stack, from designing intuitive interfaces to developing APIs and managing databases.",
+
+    "Through projects like Wanderlust, Converza, and HealthWise AI, I've been exploring real-world application development, problem-solving, and modern software technologies.",
+
+    "Before pursuing software development, I worked as an Assistant Manager, where I developed valuable skills in teamwork, coordination, communication, and responsibility. I'm continuously learning and working towards becoming a skilled software engineer."
   ],
+
   focus: [
-  "Full-Stack Web Development",
-  "AI-Powered Applications",
-  "Backend Engineering & REST APIs",
-  "Data Structures & Problem Solving",
-],
+    "Full-Stack Development",
+    "Backend Engineering",
+    "Problem Solving & DSA",
+    "Building Real-World Applications",
+  ],
 } as const;
+
 
 export type SkillGroup = {
   title: string;
@@ -85,7 +94,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Backend & Databases",
-    accent: "cyan",
+    accent: "blue",
     skills: [
       "Node.js",
       "Express.js",
@@ -98,7 +107,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Tools & Engineering",
-    accent: "violet",
+    accent: "blue",
     skills: [
       "Git",
       "GitHub",

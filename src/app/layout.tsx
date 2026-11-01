@@ -1,3 +1,4 @@
+
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { profile, contact } from "@/lib/content";
@@ -21,40 +22,59 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://prathamsharda.vercel.app";
+// Replace with your actual deployed portfolio URL
+const siteUrl = "https://your-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+
   title: {
-    default: `${profile.name} — ${profile.currentRole}`,
-    template: `%s · ${profile.name}`,
+    default: `${profile.name} | Full-Stack Developer`,
+    template: `%s | ${profile.name}`,
   },
-  description: profile.subheadline,
+
+  description:
+    "I'm an MCA student and aspiring software developer focused on full-stack web development, Java, backend engineering, and building practical software applications.",
+
   keywords: [
-    "Pratham Sharda",
-    "Junior Program Manager",
-    "AI Developer",
-    "Data Analyst",
-    "Prompt Engineering",
+    profile.name,
+    "Full Stack Developer",
+    "Software Developer",
+    "MERN Stack Developer",
+    "Java Developer",
+    "React Developer",
     "Next.js",
-    "Supabase",
-    "Fitelo",
+    "TypeScript",
+    "JavaScript",
+    "Node.js",
+    "MongoDB",
+    "Python",
+    "Web Development",
   ],
+
   authors: [{ name: profile.name, url: contact.linkedin }],
   creator: profile.name,
+
   openGraph: {
     type: "website",
     url: siteUrl,
-    title: `${profile.name} — ${profile.currentRole}`,
-    description: profile.subheadline,
-    siteName: profile.name,
+    title: `${profile.name} | Full-Stack Developer`,
+    description:
+      "Explore my software development projects, technical skills, and professional journey.",
+    siteName: `${profile.name} Portfolio`,
   },
+
   twitter: {
-    card: "summary_large_image",
-    title: `${profile.name} — ${profile.currentRole}`,
-    description: profile.subheadline,
+    card: "summary_medium_image",
+    title: `${profile.name} | Full-Stack Developer`,
+    description:
+      "Full-stack development, Java, and software engineering projects.",
   },
-  robots: { index: true, follow: true },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export const viewport: Viewport = {

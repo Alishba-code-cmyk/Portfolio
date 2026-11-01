@@ -12,7 +12,7 @@ export function About() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="About"
-          title="Building at the intersection of AI, data & operations."
+          title="Turning ideas into meaningful software."
         />
 
         <div className="mt-12 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-16">

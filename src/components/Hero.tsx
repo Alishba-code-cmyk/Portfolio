@@ -32,11 +32,11 @@ function RotatingRole() {
 }
 
 const floatingChips = [
-  { label: "AI Tools", top: "6%", left: "-10%", delay: 0 },
-  { label: "ML", top: "34%", left: "-15%", delay: 0.6 },
-  { label: "Python", bottom: "16%", left: "-10%", delay: 1.2 },
-  { label: "SQL", top: "12%", right: "-9%", delay: 0.3 },
-  { label: "Analytics", bottom: "22%", right: "-13%", delay: 0.9 },
+  { label: "Java", top: "6%", left: "-10%", delay: 0 },
+  { label: "React", top: "34%", left: "-15%", delay: 0.6 },
+  { label: "Node.js", bottom: "16%", left: "-10%", delay: 1.2 },
+  { label: "TypeScript", top: "12%", right: "-9%", delay: 0.3 },
+  { label: "MongoDB", bottom: "22%", right: "-13%", delay: 0.9 },
 ];
 
 export function Hero() {
@@ -65,7 +65,7 @@ export function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
               </span>
-              Open to building great products
+            Available for Software Development Opportunities
             </span>
           </motion.div>
 
@@ -79,8 +79,7 @@ export function Hero() {
             className="mt-2 font-display text-5xl font-bold leading-[1.02] tracking-tight sm:text-6xl md:text-7xl"
           >
             <span className="gradient-text-soft">{profile.firstName}</span>
-            <br />
-            {profile.lastName}
+           
           </motion.h1>
 
           <motion.div
@@ -96,15 +95,19 @@ export function Hero() {
           >
             {profile.subheadline}
           </motion.p>
+<motion.div
+  variants={item}
+  className="mt-6 flex flex-wrap items-center gap-2 text-sm text-faint"
+>
+  <MapPin className="h-4 w-4" />
+  <span>{profile.location}</span>
 
-          <motion.div variants={item} className="mt-6 flex items-center gap-2 text-sm text-faint">
-            <MapPin className="h-4 w-4" />
-            {profile.location}
-            <span className="mx-1 h-1 w-1 rounded-full bg-faint" />
-            <span className="text-muted">
-              Currently <span className="text-cyan">@ {profile.currentCompany}</span>
-            </span>
-          </motion.div>
+  <span className="mx-1 h-1 w-1 rounded-full bg-faint" />
+
+  <span className="text-muted">
+    MCA Student · Lovely Professional University
+  </span>
+</motion.div>
 
           <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-3">
             <MagneticButton href="#work" variant="primary">
@@ -155,7 +158,7 @@ export function Hero() {
                   alt={profile.name}
                   fill
                   priority
-                  sizes="(max-width: 1024px) 300px, 350px"
+                  sizes="(max-width: 1024px) 380px, 400px"
                   className="object-cover object-[center_20%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-70" />
