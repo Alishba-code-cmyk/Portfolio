@@ -161,6 +161,7 @@ export const projects: Project[] = [
     ],
     category: "Frontend",
     featured: true,
+    liveLink: "https://alishba-portfolio-roan.vercel.app/",
     githubLink:"https://github.com/Alishba-code-cmyk/Portfolio",
   },
   {title: "Wanderlust — Rental Listing Platform",
