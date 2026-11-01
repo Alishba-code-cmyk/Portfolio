@@ -130,9 +130,40 @@ export type Project = {
   tags: string[];
   featured?: boolean;
   category: string;
+  liveLink?: string;
+githubLink?: string;
 };
 
 export const projects: Project[] = [
+  
+  {
+    title: "HealthWise AI",
+    tagline: "AI-assisted health information and discovery",
+    description:
+      "A health-focused web application exploring AI-assisted health information and nearby hospital discovery using postal codes. Designed with a clear disclaimer to encourage responsible use of AI-generated health information.",
+    tags: ["Next.js", "React", "AI Integration", "APIs"],
+    category: "AI",
+    featured: true,
+    liveLink: "https://healt-wise.vercel.app/",
+    githubLink:"https://github.com/Alishba-code-cmyk/Healthwise",
+  },
+  
+   {
+    title: "Personal Developer Portfolio",
+    tagline: "A central hub for my work and technical journey",
+    description:
+      "A responsive portfolio showcasing my technical skills, projects, education, and professional experience, with a focus on clean design, accessible navigation, and a polished user experience.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+    category: "Frontend",
+    featured: true,
+    githubLink:"https://github.com/Alishba-code-cmyk/Portfolio",
+  },
   {title: "Wanderlust — Rental Listing Platform",
     tagline: "Discover, create, and manage property listings",
     description:
@@ -147,15 +178,8 @@ export const projects: Project[] = [
     ],
     category: "Full Stack",
     featured: true,
-  },
-  {
-    title: "HealthWise AI",
-    tagline: "AI-assisted health information and discovery",
-    description:
-      "A health-focused web application exploring AI-assisted health information and nearby hospital discovery using postal codes. Designed with a clear disclaimer to encourage responsible use of AI-generated health information.",
-    tags: ["Next.js", "React", "AI Integration", "APIs"],
-    category: "AI",
-    featured: true,
+    liveLink: "https://wanderlust-mom6.onrender.com/listings",
+    githubLink: "https://github.com/Alishba-code-cmyk/Wanderlust"
   },
   {
      title: "Converza — Real-Time Meeting Platform",
@@ -165,7 +189,7 @@ export const projects: Project[] = [
     tags: ["React","webRTC", "Node.js", "Express", "Socket.IO", "MongoDB"],
     category: "Full Stack",
     featured: true,
-   
+   githubLink: "https://github.com/Alishba-code-cmyk/zoom",
   },
   {
      title: "Zerodha — Trading Dashboard",
@@ -176,21 +200,7 @@ export const projects: Project[] = [
     category: "Frontend",
     featured: true,
   },
-  {
-    title: "Personal Developer Portfolio",
-    tagline: "A central hub for my work and technical journey",
-    description:
-      "A responsive portfolio showcasing my technical skills, projects, education, and professional experience, with a focus on clean design, accessible navigation, and a polished user experience.",
-    tags: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Vercel",
-    ],
-    category: "Frontend",
-    featured: true,
-  },
+ 
 ];
 
 export type EducationItem = {

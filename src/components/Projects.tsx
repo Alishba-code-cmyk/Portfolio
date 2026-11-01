@@ -75,7 +75,16 @@ function ProjectCard({ project, big }: { project: Project; big?: boolean }) {
             {project.category}
           </span>
         </div>
-        <ArrowUpRight className="h-5 w-5 text-faint transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-cyan" />
+       <a
+  href={project.liveLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`Visit ${project.title}`}
+  onClick={(e) => e.stopPropagation()}
+  className="relative z-20 rounded-md text-faint transition-all duration-300 hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-cyan"
+>
+  <ArrowUpRight className="h-6 w-6" />
+</a>
       </div>
 
       <h3
