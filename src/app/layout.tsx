@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
 
   twitter: {
-    card: "summary_medium_image",
+    card: "summary_large_image",
     title: `${profile.name} | Full-Stack Developer`,
     description:
       "Full-stack development, Java, and software engineering projects.",
