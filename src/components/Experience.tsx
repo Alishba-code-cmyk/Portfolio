@@ -10,7 +10,7 @@ export function Experience() {
   return (
     <section id="experience" className="relative scroll-mt-24 px-5 py-24 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading eyebrow="Experience" title="Where I've been shipping." />
+        <SectionHeading eyebrow="Experience" title="Where I've been working." />
 
         <div className="relative mt-12">
           {/* Timeline rail */}

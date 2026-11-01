@@ -25,9 +25,9 @@ export function Skills() {
     <section id="skills" className="relative scroll-mt-24 px-5 py-24 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
-          eyebrow="Skills"
-          title="A full toolkit — from prompt to production."
-          description="I go end-to-end: designing AI features, wiring up data pipelines, shipping the UI and running it in production."
+          eyebrow="Technical Skills"
+          title="Technologies I use to build software."
+          description="My technical toolkit spans programming languages, frontend development, backend engineering, databases, and development tools."
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

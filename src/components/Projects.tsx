@@ -76,16 +76,30 @@ function ProjectCard({ project, big }: { project: Project; big?: boolean }) {
             {project.category}
           </span>
         </div>
-       <a
-  href={project.liveLink}
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label={`Visit ${project.title}`}
-  onClick={(e) => e.stopPropagation()}
-  className="relative z-20 rounded-md text-faint transition-all duration-300 hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-cyan"
->
-  <ArrowUpRight className="h-6 w-6" />
-</a>
+       
+<div className="relative z-10 mt-6 flex items-center gap-4">
+  {project.liveLink && (
+    <a
+      href={project.liveLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm font-medium text-cyan hover:underline"
+    >
+      Live Demo <ArrowUpRight className="h-6 w-6" />
+    </a>
+  )}
+
+  {project.githubLink && (
+    <a
+      href={project.githubLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm font-medium text-blue hover:text-cyan"
+    >
+      Source Code <ArrowUpRight className="h-6 w-6" />
+    </a>
+  )}
+</div>
       </div>
 
       <h3
@@ -124,8 +138,8 @@ export function Projects() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Selected Work"
-          title="Things I've designed, built & shipped."
-          description="Real products solving real operational problems — from client ticketing to AI automation and analytics."
+          title="Projects I've designed & built."
+         description="A collection of projects where I explore full-stack development, backend engineering, and practical software solutions."
         />
 
         {/* Featured */}

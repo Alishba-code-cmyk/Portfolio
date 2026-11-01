@@ -14,9 +14,9 @@ export function Footer() {
               {profile.name}
             </a>
             <p className="mt-3 max-w-xs text-sm text-muted">
-              {profile.currentRole} @ {profile.currentCompany}. Building AI-powered tools & data
-              systems.
-            </p>
+  MCA student and aspiring software developer passionate about
+  full-stack development and building practical applications.
+</p>
           </div>
 
           <nav className="grid grid-cols-2 gap-x-10 gap-y-2 text-sm sm:grid-cols-3">
@@ -53,9 +53,8 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/8 pt-6 text-sm text-faint sm:flex-row">
           <p>
-            © {new Date().getFullYear()} {profile.name}. Crafted with Next.js, Tailwind & Framer
-            Motion.
-          </p>
+  © {new Date().getFullYear()} {profile.name}. All rights reserved.
+</p>
           <a
             href="#top"
             className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-muted transition-colors hover:text-cyan"

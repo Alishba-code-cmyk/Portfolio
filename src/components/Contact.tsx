@@ -68,8 +68,10 @@ export function Contact() {
                   Let&apos;s build something <span className="gradient-text">great</span>.
                 </h2>
                 <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted text-balance">
-                  Got a product to ship, a workflow to automate, or an AI idea worth exploring?
-                  I&apos;d love to hear about it.
+                  Got an idea for a web application, a software project,
+or an opportunity to collaborate? I'd love to connect
+and discuss how we can build something meaningful.
+                
                 </p>
 
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 // Replace with your actual deployed portfolio URL
-const siteUrl = "https://your-portfolio.vercel.app";
+const siteUrl = "https://alishba-portfolio-roan.vercel.app/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
