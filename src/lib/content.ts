@@ -199,6 +199,7 @@ export const projects: Project[] = [
     tags: ["React", "JavaScript", "Charts", "REST APIs"],
     category: "Frontend",
     featured: true,
+    githubLink:"https://github.com/Alishba-code-cmyk/Zerodha",
   },
  
 ];
