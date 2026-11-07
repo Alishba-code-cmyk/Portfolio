@@ -1,4 +1,4 @@
-# Pratham Sharda — Portfolio
+# alishba — Portfolio
 
 A modern, fully-animated personal portfolio. Dark "neon glow" aesthetic with an aurora background, glassmorphism, scroll-reveal motion, 3D-tilt project cards and a magnetic-button hero.
 
@@ -21,17 +21,14 @@ npm run lint     # eslint
 
 ## Editing content
 
-**All text lives in one file:** [`src/lib/content.ts`](src/lib/content.ts).
+
 Update your name, roles, about, skills, experience, projects, education, certifications and contact details there — every component reads from it. No need to touch the components for copy changes.
 
 ## Swapping your photo
 
-The hero uses `public/pratham.jpg`. To use the banquet-hall portrait (or any photo):
-
-1. Save the image as `pratham.jpg` inside the `public/` folder (replace the existing file).
+1. Save the image  inside the `public/` folder (replace the existing file).
 2. Prefer a portrait-oriented image (~4:5) for the best fit. A clean, front-facing shot works best.
 
-Your résumé PDF lives at `public/Pratham-Sharda-Resume.pdf` — replace it to update the download.
 
 ## Design system
 
